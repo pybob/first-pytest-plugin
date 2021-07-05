@@ -16,8 +16,3 @@ def pytest_report_teststatus(report, config):
     if report.when == 'call':
         if report.failed and config.getoption('nice'):
             return (report.outcome, 'O', 'OPPORTUNITY for improvement')
-
-
-def pytest_terminal_summary(report):
-    # TODO: tweak pytest's output
-    pass
