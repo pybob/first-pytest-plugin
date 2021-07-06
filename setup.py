@@ -11,6 +11,6 @@ setup(
     author_email='your_email@somewhere.com',
     license='proprietary',
     py_modules=['pytest_nice'],
-    install_requires=['pytest'],
+    install_requires=['pytest', 'flake8'],
     entry_points={'pytest11': ['nice = pytest_nice', ], },
 )
